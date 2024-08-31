@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './App.css';
 import Routes from './routes';
+require('./dotenv').config();
 
 const App = () => {
   const [data, setData] = useState([]);
@@ -12,7 +13,7 @@ const App = () => {
     const a = e.target[0].value;
     const b = e.target[1].value;
     try {
-      const response = await fetch(`http://localhost:5000/shortd/${a}/${b}`);
+      const response = await fetch(`${process.env.REACT_APP_API_URL}/shortd/${a}/${b}`);
       const jsonData = await response.json();
       setData(jsonData);
       console.log(jsonData);
