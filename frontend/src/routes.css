@@ -1,0 +1,63 @@
+.routesContainer {
+    margin: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.source, .destination {
+    margin-bottom: 10px;
+}
+
+.labelText {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.sourceData, .destinationData {
+    font-size: 1.5em;
+    color: #333;
+}
+
+.pathsContainer {
+    margin-top: 20px;
+}
+
+.pathCard {
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    font-size: 1.2em;
+}
+
+.shortestPathCard {
+    border-color: #007BFF;
+    background-color: #e7f0ff;
+    border-width: 2px;
+    box-shadow: 0 6px 12px rgba(0, 123, 255, 0.3);
+}
+
+.cardHeader {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+.cardContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.spots {
+    font-size: 1.1em;
+    color: #555;
+}
+
+.distanceData {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #007BFF;
+}

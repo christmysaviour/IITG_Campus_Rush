@@ -1,0 +1,247 @@
+.projectHeader {
+  font-family: 'Kanit', sans-serif;
+  color: #4a90e2;
+  font-size: 3rem;
+}
+
+.satMap {
+  background-image: url(./Maps/satMap.png);
+}
+
+.outMap {
+  background-image: url(./Maps/outlineMap.png);
+
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 40px;
+  padding: 20px;
+  background-color:#f7f9fc;
+}
+
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 15px;
+}
+
+.sourceInput, .destinationInput {
+  width: 100%;
+  max-width: 250px;
+  height: 50px;
+  border: 2px solid #b0bec5;
+  border-radius: 8px;
+  padding: 0 15px;
+  font-size: 1.8rem;
+  font-family: 'Roboto', sans-serif;
+  outline: none;
+}
+
+.sourceInput:focus, .destinationInput:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+
+.formButton {
+  width: 100%;
+  max-width: 250px;
+  height: 50px;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2em;
+  font-family: 'Roboto', sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+.formButton:hover, .formButton:focus {
+  background-color: #357abd;
+} 
+
+.Maps {
+  width: 75%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap; 
+  gap: 20px;
+}
+
+.satMap, .outMap {
+  width: 45%;
+  height: auto;
+  padding-bottom: 56.25%; 
+  padding-right: 20px;
+  background-size: cover;  
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 3px solid slategray; 
+  border-radius: 10px;
+  position: relative; 
+  z-index: 10; 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
+  transition: box-shadow 0.3s ease-in-out; 
+}
+
+.satMap:hover, .outMap:hover {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+
+}
+
+@media (max-width: 768px) {
+  .satMap, .outMap {
+    width: 100%;
+    height: auto;
+    padding-bottom: 100%; 
+  }
+}
+
+
+
+.formInput {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  max-width: 600px;
+  margin-top: 20px;
+  background-color: #f4f4f9;
+  border-radius: 15px;
+  padding: 30px 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.formInput:hover {
+  transform: translateY(-5px);
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 20px;
+}
+
+.formRow {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 20px;
+}
+
+.sourceForm, .destinationForm {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+
+
+label {
+  font-size: 1.2em;
+  margin-bottom: 8px;
+  color: #4a90e2;
+}
+
+
+
+.sourceInput, .destinationInput {
+  width: 100%;
+  padding: 15px; 
+   border: 2px solid #b0bec5;
+  border-radius: 10px;
+  font-size: 1.1em;
+  font-family: 'Roboto', sans-serif;
+  transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+
+
+.sourceInput:focus, .destinationInput:focus {
+  border-color: #283618;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}
+
+
+
+.formButton {
+  width: 100%;
+  padding: 15px;
+  background-color: #4a90e2;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.2em;
+  font-family: 'Roboto', sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+
+
+.formButton:hover, .formButton:focus {  
+  background-color: #357abd;
+  transform: translateY(-3px);
+}
+
+
+
+@media (max-width: 768px) {
+  .formRow {
+    flex-direction: column;
+    align-items: center; 
+    gap: 10px;
+  }
+
+  .sourceForm, .destinationForm {
+    width: 100%;
+    max-width: 400px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+  }
+
+  .formInput {
+    padding: 20px 15px;
+    justify-content: center; 
+  }
+
+  .formButton {
+    font-size: 1.1em;
+  }
+} 
+
+.projectDisplay {
+  width: 75%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+
+
+
+
+
+
+
+
+
+
+
