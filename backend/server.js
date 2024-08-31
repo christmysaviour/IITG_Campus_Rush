@@ -4,7 +4,10 @@ const app = express();
 const port = process.env.PORT || 5000; 
 
 app.use(cors({
-  origin: process.env.CORS_ORIGIN || 'http://localhost:3000',
+  origin: [
+    process.env.CORS_ORIGIN||'http://localhost:3000',  
+    process.env.CORS_BE||'http://localhost:5000',      
+  ],
   methods: ['GET', 'POST'],
   allowedHeaders: ['Content-Type']
 }));
