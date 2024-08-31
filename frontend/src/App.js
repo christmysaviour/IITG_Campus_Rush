@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './App.css';
 import Routes from './routes';
-require('./dotenv').config();
 
 const App = () => {
   const [data, setData] = useState([]);
