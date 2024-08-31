@@ -15,7 +15,6 @@ const App = () => {
       const response = await fetch(`${process.env.REACT_APP_API_URL}/shortd/${a}/${b}`);
       const jsonData = await response.json();
       setData(jsonData);
-      console.log(jsonData);
     } catch (error) {
       console.error('Error:', error);
     }
